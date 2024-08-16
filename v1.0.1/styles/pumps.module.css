@@ -1,0 +1,13 @@
+.pumps{
+    animation-name: pumps;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes pumps{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}

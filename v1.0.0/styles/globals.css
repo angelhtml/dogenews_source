@@ -1,0 +1,244 @@
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: calc(16px + (26 - 14) * ((100vw - 200px) / (1980 - 200)));
+
+background-color: #0f0018 !important;
+font-family: "Adelle_Reg" !important;
+transition: all 0.5s ease-in;
+position: relative;
+}
+.css-1bgmkj3[aria-selected=true], .css-1bgmkj3[data-selected] {
+  color: rgb(255, 255, 255) !important;
+  border-color: #1e0064;
+}
+/*=========*/
+.css-b1cel9{
+  background: red !important;
+  overflow: auto;
+  scroll-snap-align: left;
+}
+.scroll{
+  direction:rtl; 
+  overflow:auto; 
+  height:50px; 
+  width:50px;}
+
+  .h {
+    -webkit-background-clip: text;
+     -moz-background-clip: text;
+     -webkit-text-fill-color: transparent; 
+     -moz-text-fill-color: transparent;
+   animation: 1.5s ease-in 0s infinite running bg_anim;
+
+   background-image: linear-gradient(to right, #ffff00 25%, #08aaf5 50%, #48f703 100%);
+   background-size: 200% auto;
+ }
+ @keyframes bg_anim {
+   to {
+    background-position: 200% center;
+   }
+ }
+ 
+
+ .h1 {
+	color:#CFFFFF;
+	text-align:center;
+
+	text-shadow:
+	0 0 10px aqua,
+	0 0 50px aqua,
+	0 0 90px #CDFFFF
+
+	;
+	text-stroke:
+	0.8px aqua
+	;
+	-webkit-font-smoothing:antialiased;
+}
+
+
+.line-divider {
+  margin-top: 2rem;
+  font: 150% "Open Sans", Arial, sans-serif;
+  color: #999;
+  text-align: center;
+  position: relative;
+  margin-bottom:1.5rem;
+}
+
+.line-divider:before {
+  content: "";
+  display: block;
+  border-top: solid 2px #999;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 17px;
+  z-index: 1;
+}
+
+.line-divider .span-line-divider {
+  background: #000000;
+  padding: 0 20px;
+  position: relative;
+  z-index: 5;
+}
+
+
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(#006db3, #29b6f6);
+}
+.circles {
+  position: absolute;
+  height: 8rem;
+  width: 8rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle-1 {
+  height: 180px;
+  width: 180px;
+  top: -50px;
+  left: -60px;
+}
+.circle-2 {
+  height: 200px;
+  width: 200px;
+  bottom: -90px;
+  right: -90px;
+  opacity: 0.8;
+}
+/* Background circles end */
+
+.card-group {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  position: relative;
+  height: 9rem;
+  width: 16rem;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.logo img,
+.chip img,
+.number,
+.name,
+.from,
+.to,
+.ring {
+  position: absolute; /* All items inside card should have absolute position */
+}
+
+.logo img {
+  top: 1rem;
+  right: 2rem;
+  width: 5rem;
+  height: auto;
+  opacity: 0.8;
+}
+
+.chip img {
+  top: 120px;
+  left: 40px;
+  width: 50px;
+  height: auto;
+  opacity: 0.8;
+}
+
+.number,
+.name,
+.from,
+.to {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+.number {
+  left: 1rem;
+  bottom: 65px;
+  font-family: "Nunito", sans-serif;
+}
+
+.name {
+  font-size: 0.8rem;
+  left: 1rem;
+  bottom: 35px;
+}
+
+.from {
+  font-size: 0.5rem;
+  bottom: 35px;
+  right: 110px;
+}
+
+.to {
+  font-size: 0.5rem;
+  bottom: 35px;
+  right: 40px;
+}
+
+/* The two rings on the card background */
+.ring {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  background: transparent;
+  border: 50px solid rgba(255, 255, 255, 0.1);
+  bottom: -250px;
+  right: -250px;
+  box-sizing: border-box;
+}
+
+.ring::after {
+  content: "";
+  position: absolute;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background: transparent;
+  border: 30px solid rgba(255, 255, 255, 0.1);
+  bottom: -80px;
+  right: -110px;
+  box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(80, 80, 80);
+  border-radius: 5px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #a200ff;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b00db;
+}
